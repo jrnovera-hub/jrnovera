@@ -4,124 +4,330 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/ica-rubrik-black">
-    <link rel="stylesheet" href="https://fonts.cdnfonts.com/css/poppins">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+
 </head>
 <body>
-    <video autoplay muted loop id="bgVideo">
-    <source src="svgback.mp4" type="video/mp4">
-</video>  
+    <!-- Navbar -->
+    <nav class="container-fluid">
+        <div class="row align-items-center text-end">
+            <div class="col-lg-9 col-md-9 col-sm-12 col-12 mt-3 ">
+                <ul class="list-unstyled d-flex flex-wrap justify-content-center justify-content-lg-start navbutton">
+                    <li class="me-3"><a href="#contact" style="text-decoration: none;"><h5>Contact me</h5></a></li>
+                    <li class="me-3"><a href="#education" style="text-decoration: none;"><h5>Education</h5></a></li>
+                    <li class="me-3 navbutton"><a href="#aboutme" style="text-decoration: none;"><h5>About me</h5></a></li>
+                    <li class="me-3"><a href="#portfolio" style="text-decoration: none;"><h5>Portfolio</h5></a></li>
+                    <li class="me-3"><a href="#home" style="text-decoration: none;"><h5>Home</h5></a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 col-12 mt-2 text-center text-lg-end">
+                <button class="btn-top">
+                    <!-- <i class="bi bi-moon" id="icon"></i> -->
+                    <div class="form-check form-switch">
+                        <input class="form-check-input" type="checkbox" id="icon">
+                        <label class="form-check-label" for="icon" id="themeLabel">Dark Theme</label>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="hero-section container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-md-12 text-center text-lg-start text-lg-center">
+                <h6 class="hicolor">Hi, I am</h6>
+                <h5 class="hicolor">Jr Novera</h5>
+                <h1 class="gradient-text">Web and Mobile Developer</h1>
+                <p>
+                    <i class="fas fa-camera"></i> 
+                    <i class="fab fa-facebook ms-2"></i> 
+                    <i class="fas fa-heart ms-2"></i> 
+                </p>
+                <div><button class=" btn-top">Hire Me</button> <button class="download-cv"><a href="latestCV.pdf" download="My_CV.pdf" style="color:#959595">Download CV</a></button></div> 
+            </div>
+            <div class="col-lg-6 col-md-12 col-sm-12 text-center">
+                <img src="ImageOfme.jpg" alt="Jr Novera" class="img-fluid pictureko" >
+            </div>
+        </div>
+        
+        <!-- Skills -->
+         
+        <section class="container" id="myskills">
+            <h1 class="text-center skills-section gradient-text">Skills</h1>
+            <div class="row">
+                <div class="col-md-4 col-lg-4 rows">
+                    <div class="card">
+                        <i class="fbi bi-filetype-css gradient-text" style="font-size: 100px;"></i>
+                        <div class="card-body">
+                            <h4>CSS</h4>
+                            <p class="card-text">Styling websites with cascading style sheets.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 rows">
+                    <div class="card">
+                        <i class="bi bi-filetype-sql gradient-text" style="font-size: 100px;"></i>
+                        <div class="card-body">
+                            <h4>MySQL</h4>
+                            <p class="card-text">Managing databases with SQL queries.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 rows">
+                    <div class="card">
+                        <i class="bi bi-github gradient-text" style="font-size: 100px;"></i>
+                        <div class="card-body">
+                            <h4>GitHub</h4>
+                            <p class="card-text">Version control and code collaboration.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 rows">
+                    <div class="card">
+                        <i class="bi bi-git gradient-text" style="font-size: 100px;"></i>
+                        <div class="card-body">
+                            <h4>Git Bash</h4>
+                            <p class="card-text">Command line interface for Git operations.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 rows">
+                    <div class="card">
+                        <i class="bi bi-filetype-html gradient-text" style="font-size: 100px;"></i>
+                        <div class="card-body">
+                            <h4>HTML</h4>
+                            <p class="card-text">Structuring web pages with HyperText Markup Language.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 rows">
+                    <div class="card">
+                        <i class="bi bi-filetype-js gradient-text" style="font-size: 100px;"></i>
+                        <div class="card-body">
+                            <h4>JavaScript</h4>
+                            <p class="card-text">Scripting dynamic behavior on web pages.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 rows">
+                    <div class="card">
+                        <i class="bi bi-filetype-jsx gradient-text" style="font-size: 100px;"></i>
+                        <div class="card-body">
+                            <h4>React JS</h4>
+                            <p class="card-text">Building interactive UIs with React.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 rows">
+                    <div class="card">
+                        <i class="bi bi-filetype-php gradient-text" style="font-size: 100px;"></i>
+                        <div class="card-body">
+                            <h4>PHP</h4>
+                            <p class="card-text">Server-side scripting for web development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 rows">
+                    <div class="card">
+                        <i class="fa-solid fa-database gradient-text mt-5" style="font-size: 100px;"></i>
+                        <div class="card-body">
+                            <h4>MongoDB</h4>
+                            <p class="card-text">NoSQL database for modern applications.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 rows">
+                    <div class="card">
+                        <i class="bi bi-vinyl gradient-text" style="font-size: 100px;"></i>
+                        <div class="card-body">
+                            <h4>OutSystems</h4>
+                            <p class="card-text">Low-code platform for rapid application development.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 rows">
+                    <div class="card">
+                        <i class="bi bi-joystick gradient-text" style="font-size: 100px;"></i>
+                        <div class="card-body">
+                            <h4>Postman</h4>
+                            <p class="card-text">API testing and development tool.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-4 rows">
+                    <div class="card">
+                        <i class="fa-brands fa-node-js gradient-text mt-5" style="font-size: 100px;"></i>
+                        <div class="card-body">
+                            <h4>Node.js</h4>
+                            <p class="card-text">JavaScript runtime for server-side programming.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+           <!-- educaton -->
+            <div class="mt-5" id="education">
+                <h1  class=" gradient-text">Education</h1>
+            </div>
+            <div class="educ">
+                    
+                <div>
+                    <h4>President Ramon Magsaysay State University</h4>
+                        <h6>Bachelor of Computer Science</h6>
+                            <h6>2014</h6>
+                </div>
+                <div>
+                    <h4>Zuitt Cooding Bootcamp</h4>
+                        <h6>Fullstack Developer</h6>
+                        
+                        <H6>2023-2024</H6>
+                </div>
+            </div>
+            
+        </section>
+    </section>
+    <!-- about me -->
+    <div class="aboutme container" id="aboutme">
+        <h1 class="gradient-text">About Me</h1>
+        
+        <p style="color:#959595"> may past working experience is in solar philippines i work there about 1 year as a land survey associate   after my end of contract , i work as a freelance in realestate i work as a freelance realestate for 2 years .  
+            
+            i am a versatile developer on traditional web devleopement and low code web dev like outsystem
+            i know the basic of js react and express and basic of php , i know also to use mongo db my sql and postman for testing  i also know how to use git</p>
+            
+            
+            
+    </div>
 
-    <div class="navbar">
-        <ul>
-            <li><a href="#myskills">Skills</a></li>
-            <li><a href="#contactme">Contact</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#proyekto">Projects</a></li>
+    <div>
+        <h1 class="text-center mt-5 mb-5 gradient-text" id="portfolio">My Portfolio</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="img/newbaboy copy.PNG" class="images img-fluid" alt="">
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="img/project2port.PNG" class="images img-fluid" alt="">
+            </div>
+            <div class="col-sm-12 col-md-4 col-lg-4">
+                <img src="img/projectCapstone.PNG" class="images img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+    
+        
+    </div>
+
+    <!-- contact me -->
+     <div style="text-align: center;">
+        <h1 class="mt-5">Contact Me</h1>
+        <p>Cultivating Connection: Reach Out And Connect With Me</p>
+     </div>
+     
+     <div>
+        <form action="">
+            <div class="row">
+               
+                <!-- fisrt row -->
+             <div class="col-sm-12 col-md-12 col-lg-12 firstrow">
+                <div>
+                   <input type="text" name="" id="" placeholder="Name"  class="formbackground">
+                </div>
+                <div>
+                    <input type="number" name="" id="" placeholder="Number"  class="formbackground">
+                </div>
+                <div>
+                    <input type="text" name="" id="" placeholder="Timeline"  class="formbackground"> 
+                </div>
+                    <input type="email" name="email" placeholder="@email" class="formbackground">
+                 </div>
+                 
+                 <div>
+                    
+                 </div>
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn-top">Submit</button>
+            </div>
+                  
+              
+            </div>
+        </form>
+     </div>
+     <!-- footer -->
+      
+     <div class="container text-center mt-5" id="contact">
+        <h1>Jr Novera</h1>
+    </div>
+    <div class="container text-center mt-3">
+        <ul class="list-unstyled d-flex flex-wrap justify-content-center align-items-center">
+            <li class="me-3">Contact me</li>
+            <li class="me-3">Education</li>
+            <li class="me-3">About me</li>
+            <li class="me-3">Portfolio</li>
+            <li class="me-3">Home</li>
         </ul>
     </div>
 
-<div class="ProfileContainer">
-    <div class="Hi">
-        <h1>Hi I'm Jr</h1>
-    </div>  
-    <div class="Profile">
-        <div class="profile-img">
-            <img src="ImageOfme.jpg" alt="Profile Image" class="Profiles">
-        </div>
+    <div style="text-align: center;">
+        <i class="bi bi-linkedin me-1"></i>
+        <i class="bi bi-meta me-1"></i>
+        <i class="bi bi-instagram me-1"></i>
     </div>
-
    
-</div>
-
-
-<div id="myskills" class="skills">
-    <h1>About me & Skills</h1>
-</div>
-<div id="details">
-    Programming and Web Development
-Front End Web Development: HTML5, CSS3, Bootstrap, JavaScript,
-ES6, Git Basics ,React Js
-Back End Development: Object-Oriented Programming, web browser library, Node.js, Express.js,My sql , Java
-MongoDB,Versel ,Render
-Machine Learning: Postman 
-Full Stack Development: React.js, DOM Manipulation,
-Component-Driven Development, API Integration with Fetch
-<Br></Br>
-OutSystem development
-Proficient in OutSystems development, including building web and mobile applications.
-</div>
-<div class="mytools">
-    <h1>My tools</h1>
-</div>
     
-    <div class="banner">
-        <div class="slider" style="--quantity: 10">
-            <div class="item" style="--position: 1"><img src="Picture/bootstrap.webp" alt="Bootstrap"></div>
-            <div class="item" style="--position: 2"><img src="Picture/css.png" alt="CSS"></div>
-            <div class="item" style="--position: 3"><img src="Picture/bootstrap.webp" alt="Bootstrap"></div>
-            <div class="item" style="--position: 4"><img src="Picture/html.jpg" alt="HTML"></div>
-            <div class="item" style="--position: 5"><img src="Picture/java.png" alt="Java"></div>
-            <div class="item" style="--position: 6"><img src="Picture/js.png" alt="JavaScript"></div>
-            <div class="item" style="--position: 7"><img src="Picture/Mongodb.png" alt="MongoDB"></div>
-            <div class="item" style="--position: 8"><img src="Picture/Outsystem.png" alt="Outsystem"></div>
-            <div class="item" style="--position: 9"><img src="Picture/Postman.png" alt="Postman"></div>
-            <div class="item" style="--position: 10"><img src="Picture/Sql.jpg" alt="SQL"></div>
-        </div>
-        <!-- <div class="content">
-            <h1 data-content="CSS ONLY">
-                CSS ONLY
-            </h1>
-            <div class="author">
-                <h2>LUN DEV</h2>
-                <p><b>Web Design</b></p>
-                <p>
-                    Subscribe to the channel to watch many interesting videos
-                </p>
-            </div>
-            <div class="model"></div> -->
-        </div>
-    </div>
-    <span  id="education" class="educ">Courses and Education</span>
-    <div class="Courses">
-        
-        <div class="microasia">
-            <h2>Micro Asia College</h2>
-            <h3>Bachelor of Computer Science</h3>
-            <h4>2014</h4>
-        </div>
-        <div class="Zuitt">
-            <h2>Zuitt BootCamp</h2>
-            <h3>FullStack Developer</h3>
-            <h4>November 2023 - January 2024</h4>
-        </div>
-    </div>
 
-    <div id="proyekto" class="Projects">
-        <h1>Projects</h1>
-    </div>
-    <div class="myprojects">
-        <a href="https://capstone-3-olive.vercel.app/">
-            <img src="projectCapstone.PNG" alt="Project Capstone">
-        </a>
-        
-        <a href="https://new-project-react.vercel.app/">
-            <img src="project2port.PNG" alt="Project 2">
-        </a>
-    
-        <a href="https://personal-xjjzzlic.outsystemscloud.com/NativeAppBuilder/App?AppKey=82f12c4f-7f8f-4bf8-908c-3cd7dfd5b8d2">
-            <img src="newbaboy.PNG" alt="Project Baboy">
-        </a>
-    </div>
-    <br>
-    <br>
-    <div id="contactme"class="contact" style="text-align: center;" >
-        <h1 >Contact</h1>
-        <h2>Cellphone No. 09071057750</h2>
-        <h2>Gmail Jrnovera1992@gmail.com</h2>
-        <h2>Alwa Paluig Zambales</h2>
-    </div>
-    
+    <!--  -->
+<div class="text-center"> 
+    <i class="bi bi-telephone me-3"> 09071057750</i>
+    <i class="bi bi-envelope"> jrnovera@gmail.com</i></div>
+   <br>
+   <br>
 </body>
+
+<script>
+
+    // var icon =document.getElementById("icon");
+    // icon.onclick = function(){
+    //     document.body.classList.toggle("light-theme");
+    //     if(document.body.classList.contains("light-theme")){
+    //         icon.input =""
+    //     }
+    // }
+    var icon = document.getElementById("icon");
+        var themeLabel = document.getElementById("themeLabel");
+
+        icon.onclick = function() {
+            document.body.classList.toggle("light-theme");
+            document.body.classList.toggle("dark-theme");
+
+            if (document.body.classList.contains("light-theme")) {
+                themeLabel.textContent = "Dark Theme";
+            } else {
+                themeLabel.textContent = "Light Theme";
+            }
+        }
+
+        // Set initial theme based on the checkbox state
+        if (icon.checked) {
+            document.body.classList.add("light-theme");
+            themeLabel.textContent = "Dark Theme";
+        } else {
+            document.body.classList.add("dark-theme");
+            themeLabel.textContent = "Light Theme";
+        }
+    </script>
+</script>
 </html>
